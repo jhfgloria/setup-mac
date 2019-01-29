@@ -1,0 +1,16 @@
+{
+	"Create React Stateless Component": {
+		"prefix": "component",
+		"body": [
+			"import React from 'react';",
+			"",
+			"const $1 = () => (",
+			"  <React.Fragment />",
+			");",
+			"",
+			"export default $1;",
+			""
+		],
+		"description": "Create React Stateless Component"
+	}
+}
