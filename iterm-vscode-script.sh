@@ -5,7 +5,6 @@ echo "\nZSH_THEME=\"af-magic\"" >> ~/.zshrc
 brew cask install visual-studio-code
 code --install-extension eamodio.gitlens
 code --install-extension equinusocio.vsc-material-theme
-code --install-extension kisstkondoros.typelens
 code --install-extension aliariff.auto-add-brackets
 code --install-extension coenraads.bracket-pair-colorizer-2
 code --install-extension wayou.vscode-todo-highlight
