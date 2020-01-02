@@ -16,6 +16,8 @@ code --install-extension wayou.vscode-todo-highlight
 code --install-extension wix.vscode-import-cost
 code --install-extension formulahendry.auto-rename-tag
 code --install-extension wallabyjs.quokka-vscode
+code --install-extension johnpapa.vscode-peacock
+
 brew tap caskroom/fonts
 brew cask install font-fira-code
 # Change font family on VSCode
