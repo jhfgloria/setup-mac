@@ -21,8 +21,8 @@ code --install-extension johnpapa.vscode-peacock
 brew tap homebrew/cask-fonts
 brew cask install font-fira-code
 # Change font family on VSCode
-# "editor.fontFamily": “’Fira Code’”,
-# ”editor.fontLigatures": true,
+# "editor.fontFamily": "FiraCode-Retina",
+# "editor.fontLigatures": true,
 
 # Shiftit
 brew cask install shiftit
