@@ -18,7 +18,7 @@ code --install-extension formulahendry.auto-rename-tag
 code --install-extension wallabyjs.quokka-vscode
 code --install-extension johnpapa.vscode-peacock
 
-brew tap caskroom/fonts
+brew tap homebrew/cask-fonts
 brew cask install font-fira-code
 # Change font family on VSCode
 # "editor.fontFamily": “’Fira Code’”,
