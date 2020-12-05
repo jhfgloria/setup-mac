@@ -17,6 +17,7 @@ code --install-extension wix.vscode-import-cost
 code --install-extension formulahendry.auto-rename-tag
 code --install-extension wallabyjs.quokka-vscode
 code --install-extension johnpapa.vscode-peacock
+code --install-extension zhuangtongfa.material-theme
 
 brew tap homebrew/cask-fonts
 brew cask install font-fira-code
