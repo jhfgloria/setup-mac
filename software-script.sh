@@ -7,7 +7,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 echo "\nZSH_THEME=\"af-magic\"" >> ~/.zshrc
 
 # Visual Studio Code
-brew cask install visual-studio-code
+brew install --cask visual-studio-code
 code --install-extension eamodio.gitlens
 code --install-extension equinusocio.vsc-material-theme
 code --install-extension aliariff.auto-add-brackets
@@ -28,7 +28,10 @@ brew cask install font-jetbrains-mono
 # "editor.fontLigatures": true,
 
 # Shiftit
-brew cask install shiftit
+brew install --cask shiftit
+
+# Iterm2
+brew install --cask iterm2
 
 # Ruby runtime
 brew install rbenv ruby-build
