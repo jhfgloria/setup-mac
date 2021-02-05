@@ -20,8 +20,7 @@ code --install-extension zhuangtongfa.material-theme
 code --install-extension castwide.solargraph
 
 brew tap homebrew/cask-fonts
-brew cask install font-fira-code
-brew cask install font-jetbrains-mono
+brew install --cask font-jetbrains-mono
 # Change font family on VSCode
 # "editor.fontFamily": "FiraCode-Retina",
 # "editor.fontFamily": "JetBrains Mono",
