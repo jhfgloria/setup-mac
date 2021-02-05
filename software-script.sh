@@ -15,9 +15,9 @@ code --install-extension coenraads.bracket-pair-colorizer-2
 code --install-extension wayou.vscode-todo-highlight
 code --install-extension wix.vscode-import-cost
 code --install-extension formulahendry.auto-rename-tag
-code --install-extension wallabyjs.quokka-vscode
 code --install-extension johnpapa.vscode-peacock
 code --install-extension zhuangtongfa.material-theme
+code --install-extension castwide.solargraph
 
 brew tap homebrew/cask-fonts
 brew cask install font-fira-code
