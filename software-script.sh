@@ -1,23 +1,20 @@
 # Brew
+echo "Install Brew"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew update
 
 # Oh-My-Zsh
+echo "Install OMZsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 echo "\nZSH_THEME=\"af-magic\"" >> ~/.zshrc
 
+# Developer tools
+echo "Install Dev tools"
+xcode-select --install
+
 # Visual Studio Code
+echo "Install VSCode"
 brew install --cask visual-studio-code
-code --install-extension eamodio.gitlens
-code --install-extension equinusocio.vsc-material-theme
-code --install-extension aliariff.auto-add-brackets
-code --install-extension coenraads.bracket-pair-colorizer-2
-code --install-extension wayou.vscode-todo-highlight
-code --install-extension wix.vscode-import-cost
-code --install-extension formulahendry.auto-rename-tag
-code --install-extension johnpapa.vscode-peacock
-code --install-extension zhuangtongfa.material-theme
-code --install-extension castwide.solargraph
 
 brew tap homebrew/cask-fonts
 brew install --cask font-jetbrains-mono
@@ -27,19 +24,38 @@ brew install --cask font-jetbrains-mono
 # "editor.fontLigatures": true,
 
 # Shiftit
+echo "Install Shiftit"
 brew install --cask shiftit
 
-# Iterm2
-brew install --cask iterm2
+# Install Warp
+echo "Install Warp"
+brew install --cask warp
 
-# Ruby runtime
-brew install rbenv ruby-build
-echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile
-source ~/.bash_profile
-rbenv install 2.6.3
-rbenv global 2.6.3
+# Install asdf
+echo "Install asdf"
+brew install asdf
+echo ". $(brew --prefix)/opt/asdf/libexec/asdf.sh" >> ~/.zshrc
+
+## Ruby plugin
+echo "Set Ruby version"
+brew install openssl@1.1 readline
+echo "export RUBY_CONFIGURE_OPTS=\"--with-openssl-dir=$(brew --prefix openssl@1.1)\"" >> ~/.zshrc
+asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
+asdf list all ruby
+asdf install ruby 3.1.2
+
+## NodeJS plugin
+echo "Set node version"
+asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+asdf list all nodejs
+asdf install nodejs lts
+
+# Install Docker
+echo "Install Docker"
+brew install --cask docker
 
 # Rails
+echo "Install Rails globally"
 gem install rails
 
 # Cleanup
